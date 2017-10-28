@@ -21,8 +21,14 @@ public class Entrance extends BaseController{
 	}
 	
 	@RequestMapping("/new")
-	String forNew(@PathVariable String myName) {
+	String forNew() {
 		
 		return fn.test();
+	}
+	
+	@RequestMapping("/new2")
+	void forNew2() {
+		
+		fn.test2();
 	}
 }
