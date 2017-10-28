@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @EnableAutoConfiguration
 @RequestMapping("/student")
-public class Entrance extends BaseController{
+public class Entrance extends BaseController {
 
 	@RequestMapping("/hello")
 	String home() {
@@ -19,16 +19,16 @@ public class Entrance extends BaseController{
 	String index(@PathVariable String myName) {
 		return "Hello " + myName + "!!!";
 	}
-	
+
 	@RequestMapping("/new")
 	String forNew() {
-		
+
 		return fn.test();
 	}
-	
+
 	@RequestMapping("/new2")
 	void forNew2() {
-		
+
 		fn.test2();
 	}
 }
