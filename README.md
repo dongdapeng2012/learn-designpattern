@@ -1,4 +1,9 @@
 # STUDENT<br/>
+
+## App Design<br/>
+At the beginning, give the app ability to learn new knowledges
+So that app can output by itself
+
 ## Code Standard<br/>
 ### Controller<br/>
 Controller handles session, input validation, routing service, logs<br/>
