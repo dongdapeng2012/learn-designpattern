@@ -1,5 +1,10 @@
 package com.student.service;
 
-public abstract class BaseServiceImpl {
+import org.springframework.beans.factory.annotation.Autowired;
 
+import com.student.dao.NewDao;
+
+public abstract class BaseServiceImpl {
+	@Autowired
+	NewDao newDao;
 }

@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import com.student.constant.MathUtilException;
 import com.student.constant.MathUtilExceptionEnum;
 
-@Service("MathMatrixUtil")
+@Service("MathSimpleUtil")
 public class MathSimpleUtil {
 	/*
 	 * x as double[]
