@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableAutoConfiguration
 @RequestMapping("/student")
 @Controller
-public class Entrance extends BaseController {
+public class HelloController extends BaseController {
 
 	@RequestMapping("/hello")
 	public String home() {

@@ -3,7 +3,7 @@ package com.student.unittest;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import com.student.controller.Entrance;
+import com.student.controller.HelloController;
 import com.student.dao.NewDao;
 import com.student.service.NewServiceImpl;
 
@@ -20,12 +20,12 @@ import org.springframework.test.context.TestExecutionListeners;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = { Entrance.class, NewServiceImpl.class })
+@ContextConfiguration(classes = { HelloController.class, NewServiceImpl.class })
 @TestExecutionListeners(listeners = MockitoTestExecutionListener.class)
 public class MockitoTest {
 
 	@InjectMocks
-	private Entrance entrance;
+	private HelloController entrance;
 
 	@Spy
 	@InjectMocks
@@ -36,7 +36,7 @@ public class MockitoTest {
 
 	@Before
 	public void setup() {
-		entrance = new Entrance();
+		entrance = new HelloController();
 		MockitoAnnotations.initMocks(this);
 	}
 
