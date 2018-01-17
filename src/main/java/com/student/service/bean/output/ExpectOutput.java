@@ -1,4 +1,4 @@
-package com.student.controller.bean.output;
+package com.student.service.bean.output;
 
 public class ExpectOutput {
 	private String result;

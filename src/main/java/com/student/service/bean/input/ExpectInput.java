@@ -1,4 +1,4 @@
-package com.student.controller.bean.input;
+package com.student.service.bean.input;
 
 public class ExpectInput {
 
