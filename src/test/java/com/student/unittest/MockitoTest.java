@@ -3,10 +3,6 @@ package com.student.unittest;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import com.student.controller.HelloController;
-import com.student.dao.NewDao;
-import com.student.service.NewServiceImpl;
-
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
 
@@ -18,6 +14,10 @@ import org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.TestExecutionListeners;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import springbootmvc.controller.HelloController;
+import springbootmvc.dao.NewDao;
+import springbootmvc.service.NewServiceImpl;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = { HelloController.class, NewServiceImpl.class })
