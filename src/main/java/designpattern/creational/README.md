@@ -1,0 +1,1 @@
+Creational pattern objective is to create one object instance
